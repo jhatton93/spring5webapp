@@ -61,6 +61,15 @@ public class Author {
     public void setBooks(Set<Book> books){
         this.books = books;
     }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
     
     @Override
     public boolean equals(Object o) {
